@@ -14,6 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Speedtest
-      run: curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash && sudo apt-get install speedtest && speedtest --accept-license
-
+      run: |
+            curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash && sudo apt-get install speedtest && speedtest --accept-license
+            curl https://session.vedantu.com/agoraCloud/prod/617bf1869985fd6298bc4aaa/2/1637407543525/98e856d5ac418a8fac72babbb154b92d_617bf1869985fd6298bc4aaa.m3u8?AWSAccessKeyId=ASIAY7SK6MTVKLRNZDM7&Expires=1647415483&Signature=pgTpBXiYCNNYHh42s56fN4Deg4w%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEDIaCmFwLXNvdXRoLTEiRzBFAiAY29xQC%2BCei02IEma07RsyxGb59Qfby%2BfJhT7c25UEpgIhAIsSRvTUi5Iq5HDyvCg3OVy4yU2hiFwyue04hAwsLtymKoUECOv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjE3NTU4NzI5OTYyIgxcs3C5%2BKTD%2FPFe1y0q2QPPqtxUF3NjEnCjk913djB0r4zJAqJA7wJepDmQByP1pYZHPz3dxjBjyAOumkwK3jTQ0QVHNwQn0YwbcTIwu%2BYGfE4eJQhO0AWG%2FckOKqCghD7q2wC9S0i9ThYSYvoY2PHu7Lxz62f%2BKwtAA5woQsbHm%2FMwnFDR4Vnm5btXNZLcnKWtzeqcDBBwghR2Aym%2F%2FKNTTHbrviu%2F9ige3iAWtEEkqHkwLEUJz9Rg57u9cRWOklk%2Ftlo%2BLqi0yisKacL64rZsHkhQgBtVoJY5KzGRmAJbWZvv5UpkWiVBWvVQ2IcT3Y1%2Bbzt3YFb5aabUO4%2BuHexyA5bGJfuplFL9qltt5OjmjG5uyaHxzVjO1jvo4puz6o1GNkNN4IO%2F9ZKnuALMdzKAhNyb0A2cUIKqRtPzxd4knSMzx284b7Lq3c%2BZA87j%2F2PyP0TlcN15BqL6IyI21jcEEYlg8NzIYClf4wqhPO2igHGG2lZ8mW9LKwAxkV%2Bx5LfguNCXAQUwkut4GhP8CuwBZWbEhobEBo941RlCKjV594CyUaRnTqDTnMxmjZCqML%2B0C6hPWnpoAdDKU1K2RnanAySO0Mxl5xnOUsEyOI7ifG5kh4%2F2HgPr%2FsQX8dk7n1tXpD953ygFvzDOk%2BOMBjqlAVenpIT1k7UDnqGuoDfN%2BGGRz4%2FVBGSt6YxYl9ry%2FM0XKGmt82YMRmS5yDlqhOyXiKW8YYgtB7tc2id9JICavuNvGLYfQyZnjALs0Up3eeyp%2Bau4NGCa%2BN%2Fq5QrB9mpa8fYpdfzQ3FOVOqYENvbE9e0bvHY6Vlm1JDhjsW98I7njegoupDAG59aNImSoQc2HhEJvbnp3x%2BpGYCiFd4e%2FAfg%2B%2BUT3jw%3D%3D --output 1.mp4
     
