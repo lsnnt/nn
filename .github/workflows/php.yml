@@ -1,11 +1,7 @@
-name: PHP Composer
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
+name: NNT122
+ 
+on: workflow_dispatch
+ 
 jobs:
   build:
 
@@ -16,5 +12,18 @@ jobs:
     - name: Speedtest
       run: |
             curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash && sudo apt-get install speedtest && speedtest --accept-license
-            curl https://session.vedantu.com/agoraCloud/prod/617bf1869985fd6298bc4aaa/2/1637407543525/98e856d5ac418a8fac72babbb154b92d_617bf1869985fd6298bc4aaa.m3u8?AWSAccessKeyId=ASIAY7SK6MTVKLRNZDM7&Expires=1647415483&Signature=pgTpBXiYCNNYHh42s56fN4Deg4w%3D&x-amz-security-token=IQoJb3JpZ2luX2VjEDIaCmFwLXNvdXRoLTEiRzBFAiAY29xQC%2BCei02IEma07RsyxGb59Qfby%2BfJhT7c25UEpgIhAIsSRvTUi5Iq5HDyvCg3OVy4yU2hiFwyue04hAwsLtymKoUECOv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQABoMNjE3NTU4NzI5OTYyIgxcs3C5%2BKTD%2FPFe1y0q2QPPqtxUF3NjEnCjk913djB0r4zJAqJA7wJepDmQByP1pYZHPz3dxjBjyAOumkwK3jTQ0QVHNwQn0YwbcTIwu%2BYGfE4eJQhO0AWG%2FckOKqCghD7q2wC9S0i9ThYSYvoY2PHu7Lxz62f%2BKwtAA5woQsbHm%2FMwnFDR4Vnm5btXNZLcnKWtzeqcDBBwghR2Aym%2F%2FKNTTHbrviu%2F9ige3iAWtEEkqHkwLEUJz9Rg57u9cRWOklk%2Ftlo%2BLqi0yisKacL64rZsHkhQgBtVoJY5KzGRmAJbWZvv5UpkWiVBWvVQ2IcT3Y1%2Bbzt3YFb5aabUO4%2BuHexyA5bGJfuplFL9qltt5OjmjG5uyaHxzVjO1jvo4puz6o1GNkNN4IO%2F9ZKnuALMdzKAhNyb0A2cUIKqRtPzxd4knSMzx284b7Lq3c%2BZA87j%2F2PyP0TlcN15BqL6IyI21jcEEYlg8NzIYClf4wqhPO2igHGG2lZ8mW9LKwAxkV%2Bx5LfguNCXAQUwkut4GhP8CuwBZWbEhobEBo941RlCKjV594CyUaRnTqDTnMxmjZCqML%2B0C6hPWnpoAdDKU1K2RnanAySO0Mxl5xnOUsEyOI7ifG5kh4%2F2HgPr%2FsQX8dk7n1tXpD953ygFvzDOk%2BOMBjqlAVenpIT1k7UDnqGuoDfN%2BGGRz4%2FVBGSt6YxYl9ry%2FM0XKGmt82YMRmS5yDlqhOyXiKW8YYgtB7tc2id9JICavuNvGLYfQyZnjALs0Up3eeyp%2Bau4NGCa%2BN%2Fq5QrB9mpa8fYpdfzQ3FOVOqYENvbE9e0bvHY6Vlm1JDhjsW98I7njegoupDAG59aNImSoQc2HhEJvbnp3x%2BpGYCiFd4e%2FAfg%2B%2BUT3jw%3D%3D --output 1.mp4
-    
+            curl 'https://t.justdial.com/api/india_api_write/18july2018/sendvcode.php?mobile=8969464424' \
+            -H 'authority: t.justdial.com' \
+            -H 'cache-control: max-age=0' \
+            -H 'upgrade-insecure-requests: 1' \
+            -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36' \
+            -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
+            -H 'sec-gpc: 1' \
+            -H 'sec-fetch-site: none' \
+            -H 'sec-fetch-mode: navigate' \
+            -H 'sec-fetch-user: ?1' \
+            -H 'sec-fetch-dest: document' \
+            -H 'accept-language: en-US,en;q=0.9' \
+            -H 'cookie: touch=2450368704.11043.0000; ak_bmsc=B8DF65D204106D6A745F5A2977E510B0~000000000000000000000000000000~YAAQDAkuF+uj/Zl9AQAANlsQSA5KN65KOn56jw376qhrlQDFgyDNsWoHcrPvCDSIjqSz/fq1cD7dRqI9s/ci4KwFnKU2xb6kyByLhCKDFJ13WUnzldMP564h/ja44JIxyQnyaRPzJxpamf3sP/5gyE3WxrDweDkm3qnhJv4PTXH8ecdpmgAsUAYWdKtz+1V3rTKMGs5mdpFhG51dx3HeHz+0VMAKreCQHsfhXJEZ3w1M/T2KDVSSsAVM5qIp+BdOxVRMSHBTOWSrf3B4trZrODmsSCLn0iradjrAxjfsqhHTlWt/JipG/yzEOTb7SlG4TNv1QxUzCeT0l6WEZWlt6EIwsin/JcS0YHkjDdpEZStTObJpuiT/5gEv5F+grGdoyD4OCYFqulE2y5KVvMd4Qmqu1QEVm5xOuyRGl3Q8kbcc+PwM0JU=; bm_sv=57A5070A4964A84613EDD163804AFDA5~d/Rq4aOQ/L5uckUR+g5AWrryISCh4LGRnV6kik8CV96ibeDNvD3ekpddoEr9kjPw1p8RRsrzBNi8Xfgnw/Vecma7Q5+h2UhsE11Zc0thc2EIMGwNJnzlYg++Aw/sc8G9E54nxdyWbkkLaANRm2NvzcbXdJ60LxpRDN9+IZAeFOE=' \
+            -H 'if-none-match: W/"a9-vcuXohlQaddwzdaGnMfccFNfhL4"' \
+              --compressed
